@@ -7,7 +7,7 @@ This tool allows for the evaluation of various classifiers using a comprehensive
 1. **Clone Repository**: Clone this repository to your local machine using the following command:
 
     ```bash
-    git clone https://github.com/yourusername/yourrepository.git
+    git clone https://github.com/RazanEasa/POLB-Dataset-and-Analysis.git
     ```
 
 2. **Install Dependencies**: Ensure you have Python installed on your machine. Install the required Python libraries by running:

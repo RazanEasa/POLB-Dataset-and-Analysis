@@ -191,25 +191,25 @@ for i in range(n_iterations):
         arr.append(TNR)
         TNR_dict[clftext]=arr
 
-        def format_row(row, widths):
-            return " | ".join(f"{item:{width}}" for item, width in zip(row, widths))
-        
-        table_data = []
-        for i, clf,clftext in zip(range(0,len(classifiers)),classifiers,classf):
-            avg_accuracy= sum(accuracy[clftext]) / len(accuracy[clftext])
-            avg_precision = sum(precision[clftext]) / len(precision[clftext])
-            avg_recall = sum(recall[clftext]) / len(recall[clftext])
-            avg_fscore = sum(fscore[clftext]) / len(fscore[clftext])
-            avg_tnr=sum(TNR_dict[clftext]) / len(TNR_dict[clftext])
-            table_data.append([type(clf).__name__, f"{avg_accuracy:.4f}", f"{avg_precision:.4f}",f"{avg_recall:.4f}", f"{avg_tnr:.4f}", f"{avg_fscore:.4f}"])
-        
-        column_widths = [max(len(str(row[i])) for row in table_data) for i in range(len(table_data[0]))]
-        header = ["Classifier", "Accuracy", "Precision", "Sensitivity","Specificity", " F1 score"]
-        header_widths = [max(len(header[i]), column_widths[i]) for i in range(len(header))]
-        
-        print(format_row(header, header_widths))
-        print("-" * sum(header_widths) + "-" * (len(header_widths) - 1))
-        for row in table_data:
-            print(format_row(row, header_widths))
+def format_row(row, widths):
+    return " | ".join(f"{item:{width}}" for item, width in zip(row, widths))
+
+table_data = []
+for i, clf,clftext in zip(range(0,len(classifiers)),classifiers,classf):
+    avg_accuracy= sum(accuracy[clftext]) / len(accuracy[clftext])
+    avg_precision = sum(precision[clftext]) / len(precision[clftext])
+    avg_recall = sum(recall[clftext]) / len(recall[clftext])
+    avg_fscore = sum(fscore[clftext]) / len(fscore[clftext])
+    avg_tnr=sum(TNR_dict[clftext]) / len(TNR_dict[clftext])
+    table_data.append([type(clf).__name__, f"{avg_accuracy:.4f}", f"{avg_precision:.4f}",f"{avg_recall:.4f}", f"{avg_tnr:.4f}", f"{avg_fscore:.4f}"])
+
+column_widths = [max(len(str(row[i])) for row in table_data) for i in range(len(table_data[0]))]
+header = ["Classifier", "Accuracy", "Precision", "Sensitivity","Specificity", " F1 score"]
+header_widths = [max(len(header[i]), column_widths[i]) for i in range(len(header))]
+
+print(format_row(header, header_widths))
+print("-" * sum(header_widths) + "-" * (len(header_widths) - 1))
+for row in table_data:
+    print(format_row(row, header_widths))
 
 

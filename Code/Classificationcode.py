@@ -45,7 +45,7 @@ from sklearn.metrics import (
 
 import time
 
-Data = pd.read_csv('Datanew_feat_select.csv')
+Data = pd.read_csv('../Dataset/Datanew_feat_select.csv')
 y = Data['class']
 
 Data = Data.drop('class', axis=1)

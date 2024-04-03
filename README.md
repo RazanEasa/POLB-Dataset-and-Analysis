@@ -13,7 +13,7 @@ This tool allows for the evaluation of various classifiers using a comprehensive
 2. **Install Dependencies**: Ensure you have Python installed on your machine. Install the required Python libraries by running:
 
     ```bash
-    pip install pandas numpy==1.18.5 matplotlib seaborn tabulate scikit-learn xgboost
+    pip install pandas numpy==1.24.2 matplotlib seaborn tabulate scikit-learn xgboost
     ```
 
 3. **Dataset**: Place your dataset in CSV format in the same directory as the code file. Ensure that the dataset includes a column labeled 'class' for classification.

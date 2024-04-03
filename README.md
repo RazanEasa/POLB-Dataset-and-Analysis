@@ -20,21 +20,21 @@ This tool allows for the evaluation of various classifiers using a comprehensive
 
 ## Usage
 
-**Before running the code**, change your current working directory to the `POLB-Dataset-and-Analysis/Code` directory by executing the following command in your terminal:
+1. **Change Directory**, change your current working directory to the `POLB-Dataset-and-Analysis` directory by executing the following command in your terminal:
 
     ```bash
     cd POLB-Dataset-and-Analysis
     ```
 
-1. **Run Code**: Execute the Python script `Classificationcode.py` to run the classifier evaluation tool. This script evaluates various classifiers on the provided dataset and outputs the results to the console.
+2. **Run Code**: Execute the Python script `Classificationcode.py` to run the classifier evaluation tool. This script evaluates various classifiers on the provided dataset and outputs the results to the console.
 
     ```bash
     python Classificationcode.py
     ```
 
-2. **Interpret Results**: The tool will display a table summarizing the performance of each classifier in terms of accuracy, precision, recall, specificity, and F1 score.
+3. **Interpret Results**: The tool will display a table summarizing the performance of each classifier in terms of accuracy, precision, recall, specificity, and F1 score.
 
-3. **View Results**: Review the classification performance of each classifier and compare their effectiveness in handling your dataset.
+4. **View Results**: Review the classification performance of each classifier and compare their effectiveness in handling your dataset.
 
 ## Customization
 

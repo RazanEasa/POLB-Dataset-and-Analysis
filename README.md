@@ -20,7 +20,7 @@ This tool allows for the evaluation of various classifiers using a comprehensive
 
 ## Usage
 
-1. **Change Directory**, change your current working directory to the `POLB-Dataset-and-Analysis` directory by executing the following command in your terminal:
+1. **Change Directory**, change your current working directory to the `POLB-Dataset-and-Analysis/Code` directory by executing the following command in your terminal:
 
     ```bash
     cd POLB-Dataset-and-Analysis/Code

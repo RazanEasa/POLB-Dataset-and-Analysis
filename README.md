@@ -23,7 +23,7 @@ This tool allows for the evaluation of various classifiers using a comprehensive
 1. **Change Directory**, change your current working directory to the `POLB-Dataset-and-Analysis` directory by executing the following command in your terminal:
 
     ```bash
-    cd POLB-Dataset-and-Analysis
+    cd POLB-Dataset-and-Analysis/Code
     ```
 
 2. **Run Code**: Execute the Python script `Classificationcode.py` to run the classifier evaluation tool. This script evaluates various classifiers on the provided dataset and outputs the results to the console.

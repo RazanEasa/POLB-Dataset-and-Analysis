@@ -20,10 +20,10 @@ This tool allows for the evaluation of various classifiers using a comprehensive
 
 ## Usage
 
-1. **Run Code**: Execute the Python script `classifier_evaluation.py` to run the classifier evaluation tool. This script evaluates various classifiers on the provided dataset and outputs the results to the console.
+1. **Run Code**: Execute the Python script `Classificationcode.py` to run the classifier evaluation tool. This script evaluates various classifiers on the provided dataset and outputs the results to the console.
 
     ```bash
-    python classifier_evaluation.py
+    python Classificationcode.py
     ```
 
 2. **Interpret Results**: The tool will display a table summarizing the performance of each classifier in terms of accuracy, precision, recall, specificity, and F1 score.
